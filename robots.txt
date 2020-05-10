@@ -1,0 +1,4 @@
+User-Agent: Googlebot
+Disallow: /php/
+
+Sitemap: https://www.thedexk.com/sitemap.xml
