@@ -1,6 +1,6 @@
 <?php 
 $title='Aligarh Web Designers | Website Developers in Aligarh - TheDexk';
-$description = "TheDexk is a leading website designing, online promotion and maintenance firm in and around Aligarh. We are affordable, reliable and accessible to our clients. We are located in Dhorrah mafi ,Aligarh, Uttar Pradesh, 202002, India.";
+$description = "TheDexk is a leading website designing,online promotion and maintenance firm in and around Aligarh. We are affordable, reliable and accessible to our clients.";
 $tags = "web designers in aligarh, agra, noida, delhi, web solution india, hosting provider, Website, Developer, SEO, promotion, online, business";
 $url = "https://www.thedexk.com";
 $image = $url . '/images/woho.jpg';
@@ -48,8 +48,8 @@ include('header.php'); ?>
 
                             <div class="card-body p-0 content mt-3">
                                 <h5 class="mt-4"><a href="javascript:void(0)" class="title text-dark">
-<span itemprop="articleSection">Website Designing</span></a></h5>
-                                <p itemprop="articleBody" class="text-muted">An informative website is best idea to describe all benefits and info about your business and satisfy the visitor with our attractive and stunning website design</p>
+<span >Website Designing</span></a></h5>
+                                <p  class="text-muted">An informative website is best idea to describe all benefits and info about your business and satisfy the visitor with our attractive and stunning website design</p>
 
                             </div>
                         </div>
@@ -227,9 +227,9 @@ include('header.php'); ?>
                             <div class="lable text-center bg-primary pt-2 pb-2">
                                 <h6 class="best text-white mb-0 text-uppercase">Best</h6>
                             </div>
-                            <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" class="card-body py-5">
-                                <img src="images/icon/table.svg" ale="website developers in aligarh" class="mb-4" height="50" alt=""/>
-                                <h2 itemprop="bestRating" class="title text-uppercase mb-4">Desk</h2>
+                            <div class="card-body py-5">
+                                <img src="images/icon/table.svg" alt="website developers in aligarh" class="mb-4" height="50" alt=""/>
+                                <h2  class="title text-uppercase mb-4">Desk</h2>
                                 <div class="d-flex justify-content-center mb-4">
                                     <span class="h4 mb-0 mt-2">₹</span>
                                     <span class="price h1 mb-0">4999</span>
