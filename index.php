@@ -9,13 +9,13 @@ include('header.php'); ?>
 
         <!--  Hero Start  -->
         
-<span itemscope itemtype="http://schema.org/Article"><section class="bg-half-170 d-table w-100 overflow-hidden" id="home">
+<span><section class="bg-half-170 d-table w-100 overflow-hidden" id="home">
             <div class="container">
                 <div class="row align-items-center pt-5">
                     <div class="col-lg-7 col-md-6">
                         <div class="title-heading">
                              <h1 class="heading mb-3">
-<span itemprop="name">Website Developers | web designers in Aligarh</span> <span class="text-primary">TheDexk</span></h1>
+<span>Professional Web Developers in Aligarh</span> <span class="text-primary">TheDexk</span></h1>
                             <h3 class="para-desc text-muted">A Digital Marketing Agency.</h3>
                             <!--  <div class="watch-video mt-4 pt-2">
                                 <a href="http://vimeo.com/99025203" class="video-play-icon watch text-dark mb-2 ml-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block mr-2 rounded-circle bg-light text-white title-dark position-relative play play-iconbar"></i> Watch now !</a>
