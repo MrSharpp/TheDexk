@@ -1,9 +1,10 @@
 /* Template Name: Landrick - Saas & Software Landing Page Template
    Author: Shreethemes
    E-mail: shreethemes@gmail.com
+   Official Website: http://www.shreethemes.in/
    Created: August 2019
-   Version: 2.1
-   Updated: April 2020
+   Version: 2.2
+   Updated: May 2020
    File Description: Main Css file of the template
 */
 /*********************************/
@@ -27,7 +28,6 @@
  *     16.  Countdown            *
  *     17.  Contact              *
  *     18.  Footer               *
- *     19.  Switcher             *
  *********************************
  *********************************
  *         RTL SCSS              *
@@ -57,7 +57,6 @@
 @import "countdown";
 @import "contact";
 @import "footer";
-@import "switcher";
 
 // RTL Version
 @import "rtl/general-rtl";

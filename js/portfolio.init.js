@@ -1,1 +1,39 @@
-$(".mfp-image").magnificPopup({type:"image",closeOnContentClick:!0,mainClass:"mfp-fade",gallery:{enabled:!0,navigateByImgClick:!0,preload:[0,1]}}),$(window).on("load",function(){var a=$(".projects-wrapper"),i=$("#filter");a.isotope({filter:"*",layoutMode:"masonry",animationOptions:{duration:750,easing:"linear"}}),i.find("a").click(function(){var e=$(this).attr("data-filter");return i.find("a").removeClass("active"),$(this).addClass("active"),a.isotope({filter:e,animationOptions:{animationDuration:750,easing:"linear",queue:!1}}),!1})});
+// Magnific Popup
+$('.mfp-image').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-fade',
+    gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+        preload: [0, 1]
+    }
+});
+
+//Portfolio filter
+$(window).on('load', function() {
+    var $container = $('.projects-wrapper');
+    var $filter = $('#filter');
+    $container.isotope({
+        filter: '*',
+        layoutMode: 'masonry',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear'
+        }
+    });
+    $filter.find('a').click(function() {
+        var selector = $(this).attr('data-filter');
+        $filter.find('a').removeClass('active');
+        $(this).addClass('active');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                animationDuration: 750,
+                easing: 'linear',
+                queue: false,
+            }
+        });
+        return false;
+    });
+});

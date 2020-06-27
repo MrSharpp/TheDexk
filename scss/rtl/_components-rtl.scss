@@ -1,6 +1,28 @@
 //
 // .scss
 //
+//Buttons
+.btn-group {
+    .dropdown-toggle {
+        &:after {
+            left: -4px !important;
+            right: auto;
+        }
+    }
+    .dropdown-menu {
+        &:before {
+            right: 10px !important;
+            left: auto;
+        }
+        &.show {
+            right: 0;
+            left: auto;
+        }
+    }
+    .dropdown-item {
+        text-align: right !important;
+    }
+}
 
 //Alert
 .alert {
@@ -18,7 +40,7 @@
     .breadcrumb-item {
         margin-left: 0px !important;
         &:before {
-            content: "\f141";
+            content: "\F0141";
             font-family: 'Material Design Icons';
             color: $dark; 
             padding-left: 5px;
@@ -110,14 +132,14 @@
 .input-group>.input-group-append>.btn {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 .input-group>.form-control:not(:last-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 //back to top
 .back-to-top {
@@ -266,6 +288,7 @@
         margin-right: 0 !important;
     }
 }
+
 //home
 .bg-animation-left {
     &:after {
@@ -333,7 +356,26 @@
         right: auto;
     }
 }
-
+//shop-slider Slider
+.main-slider {
+    .slides {
+        .bg-slider {
+            &.slider-rtl-1 {
+                background-image: url("../images/shop/rtl-bg1.jpg") !important;
+            }
+            &.slider-rtl-2 {
+                background-image: url("../images/shop/rtl-bg2.jpg") !important;
+            }
+            &.slider-rtl-3 {
+                background-image: url("../images/shop/rtl-bg3.jpg") !important;
+            }
+        }
+    }
+}
+//Personal
+.rtl-personal-hero {
+    background-image: url("../images/personal/rtl-bg01.png") !important;
+}
 //Pricing
 .pricing-rates {
     &.best-plan { 
@@ -395,6 +437,17 @@
     .preview {
         bottom: 15px;
         left: 15px;
+    }
+}
+
+//Shopping
+.shop-list {
+    .shop-image {
+        .shop-icons {
+            right: auto;
+            left: 15px;
+            transform: translateX(-100px);
+        }
     }
 }
 

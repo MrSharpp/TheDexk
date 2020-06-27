@@ -59,6 +59,25 @@
     &.nav-sticky{
         background: $white;
         box-shadow: $shadow;
+        .navigation-menu {
+            &.nav-light {
+                > li {
+                    > a {
+                        color: $dark;
+                    }
+                }
+                .has-submenu {
+                    .menu-arrow {
+                        border-color: $dark;
+                    }
+                }
+            }
+        }
+        .logo {
+            &.logo-light {
+                color: $dark !important;
+            }
+        }
     }
 }
 

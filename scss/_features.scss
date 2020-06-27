@@ -53,6 +53,30 @@
             }
         }
     }
+    &.fea-primary {
+        transition: all 0.5s ease;
+        .content {
+            .title {
+                transition: all 0.5s ease;
+                &:hover {
+                    color: $primary !important;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: $shadow-lg;
+            background-color: $primary !important;
+            color: $white !important;
+            .icon2, 
+            .para {
+                color: rgba($white, 0.5) !important;
+            }
+            .content,
+            .icon2 {
+                z-index: 2;
+            }
+        }
+    }
 }
 .features,
 .key-feature {

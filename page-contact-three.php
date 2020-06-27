@@ -1,7 +1,12 @@
-<?php include 'header.php';$title = 'Contact - TheDexk'; ?> 
+<?php
+$title = 'Contact - TheDexk';
+$siteColor = 'dark';
+include 'header.php';
+
+?>
 
         <!-- Hero Start -->
-        <section class="bg-half bg-light d-table w-100" style="background: url('images/1.jpg') center center;">
+        <section class="bg-half bg-light d-table w-100" style="background: url('images/45.jpg') center center;">
             <div class="bg-overlay bg-overlay-white"></div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -99,6 +104,12 @@
            
         </section><!--end section-->
         <!-- End contact -->
+
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row">
+
+
 <?php include 'footer.php' ?>
 
    <script type="text/javascript">

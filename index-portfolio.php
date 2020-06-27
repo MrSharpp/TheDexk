@@ -1,4 +1,9 @@
-<?php $title = 'portfolio - thedexk'; include 'header.php';  ?>
+<?php
+$title = 'Portfolio - TheDexk';
+$siteColor = 'dark';
+include 'header.php';
+
+?>
 
 
 
@@ -173,6 +178,8 @@
             </div>
         </section><!--end section-->
         <!-- Work End -->
-
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
 
 <?php include 'footer.php' ?>

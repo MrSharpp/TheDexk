@@ -13,6 +13,12 @@
     .logo {
         float: left;
         color: $dark !important;
+        .l-dark {
+            display: none;
+        }
+        .l-light {
+            display: inline-block;
+        }
     }
     .has-submenu {
         &.active {
@@ -65,7 +71,7 @@
             width: 25px;
             display: block;
             position: relative;
-            margin: 32px 20px 24px;
+            margin: 28px 20px;
             height: 18px;
         }
         span {
@@ -85,7 +91,6 @@
     .buy-button {
         float: right;
         line-height: 68px;
-        padding: 3px 0;
         .login-btn-primary {
             display: none;
         }
@@ -169,6 +174,11 @@
                 right: -1px;
                 top: 30px;
             }
+            &:hover {
+                .menu-arrow {
+                    transform: rotate(225deg);
+                }
+            }
         }
     }
     .menu-extras {
@@ -221,6 +231,35 @@
     &.nav-sticky{
         background: $white;
         box-shadow: $shadow;
+        .navigation-menu {
+            &.nav-light {
+                > li {
+                    > a {
+                        color: $dark;
+                    }
+                    &.active {
+                        > a {
+                            color: $primary !important;
+                        }      
+                    }
+                    &:hover, 
+                    &.active {
+                        > .menu-arrow {
+                            border-color: $primary !important;
+                        }
+                        > a {
+                            color: $primary !important;
+                        }
+                    }
+                } 
+                .has-submenu {
+                    .menu-arrow {
+                        border-color: $dark; 
+                    }
+                }
+            }
+        }
+        
         .buy-button {
             .login-btn-primary {
                 display: inline-block;
@@ -229,12 +268,20 @@
                 display: none;
             }
         }
+        .logo {
+            .l-dark {
+                display: inline-block;
+            }
+            .l-light {
+                display: none;
+            }
+        }
     }
 }
 .logo {
     font-weight: 700;
     font-size: 24px;
-    padding: 3px 0;
+    padding: 0 0 6px;
     letter-spacing: 1px;
     line-height: 68px;
 }
@@ -255,6 +302,16 @@
                             }
                         }
                     } 
+                }
+                &:hover {
+                    .menu-arrow {
+                        top: 33px !important;
+                    }
+                }
+                &.active {
+                    .menu-arrow {
+                        top: 30px;
+                    }
                 }
             } 
             > li {
@@ -365,7 +422,45 @@
                     }
                 }
             }
-        }        
+            &.nav-light {
+                > li {
+                    > a {
+                        color: rgba($white, 0.5);
+                    }   
+                    &.active {
+                        > a {
+                            color: $white !important;
+                        }      
+                    }           
+                    &:hover {
+                        > .menu-arrow {
+                            border-color: $white !important;
+                        }
+                        > a {
+                            color: $white !important;
+                        }
+                    }
+                } 
+                .has-submenu {
+                    .menu-arrow {
+                        border-color: rgba($white, 0.5);
+                    }
+                    &.active {
+                        .menu-arrow{
+                            border-color: $white !important;
+                        }
+                    }
+                }
+            }
+
+            &.nav-right {
+                justify-content: flex-end !important;
+            }
+        }  
+        .buy-button {
+            padding-left: 15px;
+            margin-left: 15px;
+        }      
         .navbar-toggle {
             display: none;
         }
@@ -401,6 +496,14 @@
         background-color: $white;
         box-shadow: $shadow;
         min-height: 74px;
+        .logo {
+            .l-dark {
+                display: inline-block !important;
+            }
+            .l-light {
+                display: none !important;
+            }
+        }
         .container {
             width: auto;
         }
@@ -535,6 +638,9 @@
                     top: 16px;
                 }
             }
+        }
+        .buy-button {
+            padding: 3px 0;
         }
     }
 }

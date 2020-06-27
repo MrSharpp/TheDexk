@@ -18,7 +18,7 @@
     //Buy button
     .buy-button {
         float: left;
-        padding: 3px 0;
+        padding: 0 0 6px;
     }
 
     .navigation-menu {
@@ -97,6 +97,13 @@
                     }
                 }
             }
+        }
+
+        .buy-button {
+            padding-right: 15px !important;
+            margin-right: 15px !important;
+            padding-left: auto;
+            margin-left: auto;
         }
     }
 }

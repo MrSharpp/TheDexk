@@ -18,8 +18,6 @@
 #preloader #status .spinner .double-bounce1, 
 #preloader #status .spinner .double-bounce2,
 .social-icon li a:hover,
-.back-to-top:hover,
-.back-to-home a,
 #topnav .navbar-toggle.open span:hover,
 .gradient,
 .flex-control-paging li a.flex-active,
@@ -33,7 +31,8 @@
 .bg-animation-left.crypto-home:after,
 .classic-app-image .bg-app-shape:after,
 .classic-saas-image .bg-saas-shape:after,
-.work-container.work-modern .icons .work-icon:hover {
+.work-container.work-modern .icons .work-icon:hover,
+.features.fea-primary:hover {
     background-color: #2f55d4 !important;
 }
 
@@ -59,6 +58,9 @@
 #topnav .navigation-menu > li .submenu li a:hover,
 #topnav .navigation-menu > li.has-submenu.open > a,
 #topnav .has-submenu.active a,
+#topnav.nav-sticky .navigation-menu.nav-light > li.active > a,
+#topnav.nav-sticky .navigation-menu.nav-light > li:hover > a, 
+#topnav.nav-sticky .navigation-menu.nav-light > li.active > a,
 .course-feature .title:hover,
 .pricing-rates.business-rate:hover .title,
 .blog .content .title:hover,
@@ -78,7 +80,9 @@
 .explore-feature:hover .title,
 .work-container.work-classic .content .title:hover, 
 .work-container.work-grid .content .title:hover, 
-.work-container.work-modern .content .title:hover {
+.work-container.work-modern .content .title:hover,
+.shop-list .content .product-name:hover,
+.features.fea-primary .content .title:hover {
     color: #2f55d4 !important;
 }
 
@@ -110,6 +114,8 @@
 #topnav.scroll .navigation-menu > li.active > .menu-arrow,
 #topnav .navigation-menu > li:hover > .menu-arrow,
 #topnav .has-submenu .submenu .has-submenu:hover .submenu-arrow,
+#topnav.nav-sticky .navigation-menu.nav-light > li:hover > .menu-arrow, 
+#topnav.nav-sticky .navigation-menu.nav-light > li.active > .menu-arrow,
 .pricing-rates.business-rate:hover,
 .pricing-rates.starter-plan,
 .event-schedule:hover,

@@ -324,7 +324,7 @@ $value in $colors {
             content: "";
         }
         &:after {
-            content: "\f142" !important;
+            content: "\F0142" !important;
             font-size: 14px;
             color: $dark; 
             font-family: 'Material Design Icons';
@@ -387,6 +387,10 @@ $value in $colors {
         height: 65px;
         width: 65px;
     }
+    &.avatar-md-md {
+        height: 80px;
+        width: 80px;
+    }
     &.avatar-medium {
         height: 110px;
         width: 110px;
@@ -413,12 +417,6 @@ $value in $colors {
         .faq {           
             .card-header {
                 padding-right: 40px !important;
-                &.card-header-2 {
-                    border-bottom: 0;
-                    .faq-question {
-                        font-size: 18px;
-                    }
-                }
             }
         }  
         a.faq[data-toggle=collapse]{
@@ -426,7 +424,7 @@ $value in $colors {
             color: $primary;
             transition: all 0.5s;
             &:before {
-                content: '\F143';
+                content: '\F0143';
                 display: block;
                 font-family: 'Material Design Icons';
                 font-size: 18px;
@@ -442,14 +440,14 @@ $value in $colors {
                 color: $dark !important;
                 transition: all 0.5s;
                 &:before {
-                    top: 20px;
+                    top: 15px;
                     transform: rotate(180deg);
                     color: $dark !important;
                 }
             }
         }
         .title {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
@@ -715,30 +713,18 @@ $value in $colors {
         }
     }
 }
-
 //back to top
 .back-to-top {
     z-index: 99; 
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 32px;
-    height: 32px;
-    line-height: 30px;
     display: none;
-    color: $dark;
-    background-color: $gray-400;
-    transition: all 0.5s ease; 
-    box-shadow: $shadow;
+    transition: all 0.5s ease;
     .icons {
         transition: all 0.5s ease;
-        stroke-width: 2; 
-        height: 14px;
-        width: 14px; 
     }
     &:hover {
-        background-color: $primary;
-        color: $white;
         transform: rotate(45deg);
         .icons {
             transform: rotate(-45deg);
@@ -752,12 +738,6 @@ $value in $colors {
     top: 4%;
     right: 2%;
     z-index: 1;
-    a {
-        width: 40px;
-        height: 40px;
-        line-height: 36px;
-        background: $primary;
-    }
 }
 
 //Sticky Sidebar
@@ -807,6 +787,13 @@ $value in $colors {
 }
 .display-4 {
     font-size: 56px !important;
+}
+
+[class^=uil-], 
+[class*=" uil-"] {
+    &:before {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
